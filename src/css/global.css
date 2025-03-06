@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer components {
+    .slider{
+        @apply grid;
+        grid-template-areas: "slide";
+    }
+
+    .slider-childs{
+        //@apply before:absolute before:inset-0 before:bg-amber-700;
+        grid-area: slide;
+    }
+
+    .slider-preview{
+        grid-area: slide;
+        @apply z-[100] self-center justify-self-start ml-4;
+    }
+
+    .slider-next{
+        grid-area: slide;
+        @apply z-[100] self-center justify-self-end mr-4;
+    }
+}

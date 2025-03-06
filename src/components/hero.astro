@@ -1,0 +1,85 @@
+---
+import ArrowLeft from "./icons/arrowLeft.astro";
+import ArrowRight from "./icons/arrowRight.astro";
+
+
+---
+
+<section class="w-[100%] mx-auto max-w-screen
+overflow-hidden text-white slider" id="slider">
+
+<figure class="relative w-full h-full aspect-video slider-childs ">
+    <img src="/images/fundacion1.webp" alt="" class="w-full h-full block object-cover ">
+
+    <div class="absolute inset-0  
+    w-[100%] mx-auto h-max 
+    flex flex-col items-center
+    space-y-4 py-8 bg-linear-to-t from-transparent to-black">
+        <h2 class="text-3xl font-bold w-[80%]">Imagen 1</h2>
+        <p class="w-[80%] hidden md:block">Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit.
+            At accusantium aperiam ex quam
+            temporibus ea est rerum saepe
+            esse pariatur.</p>
+    </div>
+
+</figure>
+
+<figure class="relative w-full h-full aspect-video slider-childs ">
+    <img src="/images/fundacion2.webp" alt="" class="w-full h-full block object-cover ">
+
+    <div class="absolute inset-0  
+    w-[100%] mx-auto h-max 
+    flex flex-col items-center
+    space-y-4 py-8 bg-linear-to-t from-transparent to-black">
+        <h2 class="text-3xl font-bold w-[80%]">Imagen 2</h2>
+        <p class="w-[80%] hidden md:block">Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit.
+            At accusantium aperiam ex quam
+            temporibus ea est rerum saepe
+            esse pariatur.</p>
+    </div>
+
+</figure>
+
+<figure class="relative w-full h-full aspect-video slider-childs ">
+    <img src="/images/fundacion3.webp" alt="" class="w-full h-full block object-cover ">
+
+    <div class="absolute inset-0  
+    w-[100%] mx-auto h-max 
+    flex flex-col items-center
+    space-y-4 py-8 bg-linear-to-t from-transparent to-black">
+        <h2 class="text-3xl font-bold w-[80%]">Imagen 3</h2>
+        <p class="w-[80%] hidden md:block">Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit.
+            At accusantium aperiam ex quam
+            temporibus ea est rerum saepe
+            esse pariatur.</p>
+    </div>
+
+</figure>
+
+<button class="slider-preview" data-button="prev">
+    <ArrowLeft />
+</button>
+
+<button class="slider-next" data-button="next">
+    <ArrowRight />
+</button>
+
+
+</section>
+
+
+<script>
+    const slider = document.querySelector('#slider') as HTMLElement;
+    const sliderChilds = [...slider.querySelectorAll('figure')];
+    console.log(sliderChilds);
+
+    sliderChilds.forEach((child, index: any) => {
+        child.dataset.idSlider = index;
+    })
+
+    console.log(sliderChilds)
+</script>
+

@@ -1,0 +1,36 @@
+---
+import Menu from "./icons/menu.astro";
+
+
+---
+
+<header class=" flex justify-between mx-5 lg:mx-0 lg:justify-around items-center text-[15px] font-semibold ">
+    <a href="/" class="transition-all hover:scale-105">
+        <img src="/images/logFun.webp" alt="Logo Fundación Univalle Yumbo"
+        class="max-w-[200px] flex ">
+    </a>
+    
+    <nav class="hidden lg:block">
+        <ul class="flex justify-around gap-5">
+            <li ><a href="/" class="transition-all hover:bg-red-400
+            hover:text-white px-4 py-2 rounded-full">Inicio</a>
+            </li>
+            
+            <li ><a href="/about" class=" transition-all hover:bg-red-400
+                hover:text-white px-4 py-2 rounded-full">Sobre Nosotros</a>
+            </li>
+           
+            <li ><a href="/projects" class=" transition-all hover:bg-red-400
+                hover:text-white px-4 py-2 rounded-full">Proyectos</a>
+            </li>
+           
+            <li ><a href="/financial" class=" transition-all hover:bg-red-400
+                hover:text-white px-4 py-2 rounded-full">Estados Financieros</a>
+            </li>
+        </ul>
+    </nav>
+
+    <Menu>
+
+    </Menu>
+</header>
