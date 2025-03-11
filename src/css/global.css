@@ -7,17 +7,17 @@
     }
 
     .slider-childs{
-        //@apply before:absolute before:inset-0 before:bg-amber-700;
-        grid-area: slide;
+        //@apply before:absolute before:inset-0 before:grandient-to-b from-transparent to-black;
         transition: .1s clip-path .6s;
-        clip-path: polygon(50% 0%, 50% 100%, 50% 100%);
+        clip-path: polygon(50% 0%, 50% 0, 50% 100%, 50% 100%);
+        grid-area: slide;
     }
 
     [data-active]{
         order: 1;
         transition: .6s clip-path;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
+    } 
 
     .slider-preview{
         grid-area: slide;

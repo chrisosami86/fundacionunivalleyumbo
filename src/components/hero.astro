@@ -6,7 +6,7 @@ import ArrowRight from "./icons/arrowRight.astro";
 <section class="w-[100%] mx-auto max-w-screen
 overflow-hidden text-white slider" id="slider">
 
-<figure class="relative w-full h-full aspect-video slider-childs" data-active>
+<figure class="relative w-full h-full aspect-video slider-childs " data-active>
     <img src="/images/fundacion1.webp" alt="" class="w-full h-full block object-cover ">
 
     <div class="absolute inset-0  
@@ -14,10 +14,7 @@ overflow-hidden text-white slider" id="slider">
     flex flex-col items-center
     space-y-4 py-8 bg-linear-to-t from-transparent to-black">
         <h2 class="text-3xl font-bold w-[80%]">Imagen 1</h2>
-        <p class="w-[80%] hidden md:block">Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit.
-            At accusantium aperiam ex quam
-            temporibus ea est rerum saepe
+        <p class="w-[80%] hidden md:block">Esto es una prueba del texto que sale en la imagen
             esse pariatur.</p>
     </div>
 
@@ -64,7 +61,6 @@ overflow-hidden text-white slider" id="slider">
 <button class="slider-next" data-button="next">
     <ArrowRight />
 </button>
-
 
 </section>
 
@@ -129,6 +125,23 @@ overflow-hidden text-white slider" id="slider">
     addNewActiveElement(newActiveElement);
     console.log(getCurrentImage());
 });
+
+setInterval(() => {
+    const currentImage = getCurrentImage() as HTMLElement;
+    let currentActiveIndex: number = Number(currentImage.dataset.idSlider); // Convertir a número
+    currentActiveIndex += 1;
+
+    if (currentActiveIndex >= lengthImages) { // Cambié '>' por '>='
+        currentActiveIndex = 0;
+    }
+
+    const newActiveElement = sliderChilds[currentActiveIndex];  
+    if (!newActiveElement) return; // Evitar errores si el elemento es undefined
+
+    removeActiveElement(newActiveElement);
+    addNewActiveElement(newActiveElement);
+    console.log(getCurrentImage());
+}, 6000);
 
 
 </script>
