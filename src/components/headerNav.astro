@@ -1,6 +1,6 @@
 ---
-import Menu from "./icons/menu.astro";
-
+import MenuButton from "./icons/menuButton.astro";
+import CloseButton from "./icons/closeButton.astro";
 
 ---
 
@@ -31,9 +31,51 @@ import Menu from "./icons/menu.astro";
         </ul>
     </nav>
 
-<a href="" class="lg:hidden hover:bg-red-400 hover:scale-105 rounded-sm transition-all">
-    <Menu />
-</a>
-    
+    <MenuButton />    
     
 </header>
+
+<nav id="menuHidden" class="hidden opacity-95 w-full h-dvh bg-red-800 fixed z-110 text-white content-center text-3xl transition-all">
+    <CloseButton />
+
+    <ul class="flex flex-col  items-center gap-5">
+        <li ><a id="homePage" href="/" class="transition-all hover:bg-red-500
+        hover:text-white px-4 py-2 rounded-full">Inicio</a>
+        </li>
+        
+        <li ><a id="aboutPage" href="/about" class=" transition-all hover:bg-red-500
+            hover:text-white px-4 py-2 rounded-full">Sobre Nosotros</a>
+        </li>
+       
+        <li ><a id="projectsPage" href="/projects" class=" transition-all hover:bg-red-500
+            hover:text-white px-4 py-2 rounded-full">Proyectos</a>
+        </li>
+       
+        <li ><a id="financialPage" href="/financial" class=" transition-all hover:bg-red-500
+            hover:text-white px-4 py-2 rounded-full">Estados Financieros</a>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    const menuButton = document.querySelector("#menuButton") as HTMLElement | null;
+    const menuHidden = document.querySelector("#menuHidden") as HTMLElement | null;
+    const closeButton = document.querySelector("#closeButton") as HTMLElement | null;
+    const pageButtons = document.querySelectorAll("#menuHidden a");
+
+    if (menuButton && menuHidden && closeButton) {
+        menuButton.addEventListener("click", () => {
+            menuHidden.classList.replace("hidden","block");
+        });
+
+        closeButton.addEventListener("click", () => {
+            menuHidden.classList.replace("block","hidden");
+        });
+
+        pageButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                menuHidden.classList.replace("block","hidden");
+            });
+        });
+    }
+</script>
