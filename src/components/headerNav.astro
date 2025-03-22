@@ -6,7 +6,7 @@ import CloseButton from "./icons/closeButton.astro";
 
 <header class=" flex justify-around  items-center text-[15px] font-semibold fixed z-101 w-full bg-amber-50">
 
-    <a href="/" class="transition-all hover:scale-105 ">
+    <a href="/" class="transition-all hover:scale-105 " id="btnInicio">
         <img src="/images/logFun.webp" alt="Logo Fundación Univalle Yumbo"
         class="max-w-[200px]">
     </a>
@@ -35,7 +35,7 @@ import CloseButton from "./icons/closeButton.astro";
     
 </header>
 
-<nav id="menuHidden" class="hidden opacity-95 w-full h-dvh bg-red-800 fixed z-110 text-white content-center text-3xl transition-all">
+<nav id="menuHidden" class="block lg:hidden top-[-1000px] opacity-95 w-full h-dvh bg-red-800 fixed z-110 text-white content-center text-3xl transition-all duration-300 ease-out">
     <CloseButton />
 
     <ul class="flex flex-col  items-center gap-5">
@@ -57,24 +57,36 @@ import CloseButton from "./icons/closeButton.astro";
     </ul>
 </nav>
 
+
+
 <script>
     const menuButton = document.querySelector("#menuButton") as HTMLElement | null;
     const menuHidden = document.querySelector("#menuHidden") as HTMLElement | null;
     const closeButton = document.querySelector("#closeButton") as HTMLElement | null;
     const pageButtons = document.querySelectorAll("#menuHidden a");
+    const btnInicio = document.querySelector("#btnInicio");
 
-    if (menuButton && menuHidden && closeButton) {
+    if (menuButton && menuHidden && closeButton && btnInicio) {
         menuButton.addEventListener("click", () => {
-            menuHidden.classList.replace("hidden","block");
+            menuHidden.classList.replace("top-[-1000px]", "top-0");
         });
 
         closeButton.addEventListener("click", () => {
-            menuHidden.classList.replace("block","hidden");
+            menuHidden.classList.replace("top-0","top-[-1000px]", );
+        });
+
+        btnInicio.addEventListener("click", () => {
+                setTimeout(() => {
+                    location.reload();                    
+                }, 300);
         });
 
         pageButtons.forEach((button) => {
             button.addEventListener("click", () => {
-                menuHidden.classList.replace("block","hidden");
+                menuHidden.classList.replace("top-0","top-[-1000px]", );
+                setTimeout(() => {
+                    location.reload();                    
+                }, 300);
             });
         });
     }
