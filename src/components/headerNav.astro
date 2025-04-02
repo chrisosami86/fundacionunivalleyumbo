@@ -11,7 +11,7 @@ import CloseButton from "./icons/closeButton.astro";
         class="max-w-[200px]">
     </a>
     
-    <nav class="hidden lg:flex">
+    <nav class="hidden lg:flex text-xl">
         <ul class="flex justify-around gap-5">
             <li ><a href="/" class="transition-all hover:bg-red-400
             hover:text-white px-4 py-2 rounded-full">Inicio</a>
@@ -35,7 +35,8 @@ import CloseButton from "./icons/closeButton.astro";
     
 </header>
 
-<nav id="menuHidden" class="block lg:hidden top-[-1000px] opacity-95 w-full h-dvh bg-red-800 fixed z-110 text-white content-center text-3xl transition-all duration-300 ease-out">
+<nav id="menuHidden" class="block lg:hidden top-[-1000px] opacity-95 w-full h-dvh bg-red-800 fixed z-110 text-white
+content-center text-3xl transition-all duration-300 ease-out">
     <CloseButton />
 
     <ul class="flex flex-col  items-center gap-5">
