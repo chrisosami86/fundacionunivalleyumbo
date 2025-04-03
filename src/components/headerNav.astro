@@ -17,11 +17,11 @@ import CloseButton from "./icons/closeButton.astro";
             hover:text-white px-4 py-2 rounded-full">Inicio</a>
             </li>
             
-            <li ><a href="/about" class=" transition-all hover:bg-red-400
+            <li ><a href="/404" class=" transition-all hover:bg-red-400
                 hover:text-white px-4 py-2 rounded-full">Sobre Nosotros</a>
             </li>
            
-            <li ><a href="/projects" class=" transition-all hover:bg-red-400
+            <li ><a href="/404" class=" transition-all hover:bg-red-400
                 hover:text-white px-4 py-2 rounded-full">Proyectos</a>
             </li>
            
@@ -44,11 +44,11 @@ content-center text-3xl transition-all duration-300 ease-out">
         hover:text-white px-4 py-2 rounded-full">Inicio</a>
         </li>
         
-        <li ><a id="aboutPage" href="/about" class=" transition-all hover:bg-red-500
+        <li ><a id="aboutPage" href="/" class=" transition-all hover:bg-red-500
             hover:text-white px-4 py-2 rounded-full">Sobre Nosotros</a>
         </li>
        
-        <li ><a id="projectsPage" href="/projects" class=" transition-all hover:bg-red-500
+        <li ><a id="projectsPage" href="/404" class=" transition-all hover:bg-red-500
             hover:text-white px-4 py-2 rounded-full">Proyectos</a>
         </li>
        
@@ -78,7 +78,7 @@ content-center text-3xl transition-all duration-300 ease-out">
 
         btnInicio.addEventListener("click", () => {
                 setTimeout(() => {
-                    location.reload();                    
+                    //location.reload();                    
                 }, 300);
         });
 
@@ -86,7 +86,7 @@ content-center text-3xl transition-all duration-300 ease-out">
             button.addEventListener("click", () => {
                 menuHidden.classList.replace("top-0","top-[-1000px]", );
                 setTimeout(() => {
-                    location.reload();                    
+                    //location.reload();                    
                 }, 300);
             });
         });

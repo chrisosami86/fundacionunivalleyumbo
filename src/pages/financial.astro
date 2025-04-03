@@ -3,7 +3,34 @@ import Hero2 from "../components/hero2.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Estados Finacieros">
+<MainLayout>
     <Hero2 srcImg = "../images/logo2.webp"/>
+    <section class="flex flex-col items-stretch w-[70%] mx-auto my-6 shadow-lg p-6">
+        <h1 class="bg-amber-700 text-white text-2xl mb-4 px-4 py-2 text-center rounded-full">Estados Financieros Consolidados</h1>
+        <h1 class="bg-amber-700 text-white text-2xl mb-4 px-4 py-2 text-center rounded-full">2024</h1>
+
+        <div class="flex justify-around">
+            <div>
+                <h2 class="text-xl font-semibold mb-4 gap-4">Balance General</h2>
+                <p>Diciembre</p>
+                <p>Noviembre</p>
+                <p>Octrubre</p>
+            </div>
+    
+            <div>
+                <h2 class="text-xl font-semibold mb-4 gap-4">Estado de Pérdidas y Ganancias</h2>
+                <p>Diciembre</p>
+                <p>Noviembre</p>
+                <p>Octrubre</p>
+            </div>
+    
+            <div>
+                <h2 class="text-xl font-semibold mb-4 gap-4">Estados Financieros con Notas</h2>
+                <p>Diciembre</p>
+                <p>Noviembre</p>
+                <p>Octrubre</p>
+            </div>
+        </div>
+    </section>
 </MainLayout>
 

@@ -3,10 +3,12 @@
 const {srcImg} = Astro.props;
 ---
 
-<section class="md:flex-row flex flex-col md:justify-around md: items-center content-center pt-24 px-4 pb-4 w-full bg-amber-800 gap-4">
-    <div class="bg-amber-50 grow-2 flex flex-col items-center gap-4 min-w-[350px]">
-        <h1 class="text-4xl font-semibold">Hero 2</h1>
-        <p>Estamos probando que funcione el titulo 2</p>
+<section class="md:flex-row flex flex-col md:justify-around md:  content-center pt-36 px-4 pb-4 w-full
+bg-linear-to-t from-amber-100 to-amber-400 gap-4 ">
+    <div class="grow-2 flex flex-col items-center gap-4 min-w-[350px] p-4">
+        <h1 class="lg:text-4xl text-3xl font-bold text-pretty">Estados Financieros: <span class="text-red-400 font-bold">Transparencia y Compromiso</span></h1>
+        <p class=" hidden md:block lg:text-2xl text-xl w-[70%] font-semibold text-gray-800">Creemos en la claridad y la responsabilidad. <br>Aquí encontrarás nuestros estados financieros, reflejando nuestro compromiso con una
+            gestión honesta y el impacto positivo en nuestra comunidad.</p>
     </div>
     <div class="flex max-h-[600px] justify-around bg-lime-400 grow-0">
         <img src={srcImg} alt="" class="object-center object-contain max-w-[60%]" >
