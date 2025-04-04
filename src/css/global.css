@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@plugin "@midudev/tailwind-animations";
+
 @layer components {
     .slider{
         @apply grid;

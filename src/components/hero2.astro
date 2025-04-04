@@ -1,17 +1,16 @@
 ---
 
-const {srcImg} = Astro.props;
+const {srcImg, titleHero1, titleHero2, textHero1, textHero2} = Astro.props;
 ---
 
 
 <section id = hero2 class="md:flex-row flex flex-col md:justify-around md:content-center pt-32 w-full gap-4 h-full aspect-video text-white mb-40">
     <img src={srcImg} alt="" class="absolute w-full">
 
-    <div class="relative m-auto lg:top-0 top-12 text-center w-[50%]">
+    <div class="relative m-auto lg:top-0 top-12 text-center w-[50%] animate-fade-in-down">
 
-        <h1 class="lg:text-6xl text-3xl font-bold text-pretty mb-20">Estados Financieros: <span class="text-amber-300 font-bold">Transparencia y Compromiso</span></h1>
-        <p class=" hidden md:block lg:text-3xl font-semibold">Creemos en la claridad y la responsabilidad. <br><br>Aquí encontrarás nuestros estados financieros, reflejando nuestro compromiso con una
-            gestión honesta y el impacto positivo en nuestra comunidad.</p>
+        <h1 class="lg:text-6xl text-3xl font-bold text-pretty mb-20">{titleHero1}<span class="text-amber-300 font-bold">{titleHero2}</span></h1>
+        <p class=" hidden md:block lg:text-3xl font-semibold">{textHero1}<br><br>{textHero2}</p>
     </div>
 
     
