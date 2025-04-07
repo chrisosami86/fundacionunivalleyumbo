@@ -28,7 +28,7 @@ import Consejo from '../components/consejo.astro';
 					<p class="mb-8 text-xl">Acompañamos a jóvenes y adultos en su camino hacia la
 						<span class="font-semibold text-amber-200">educación superior</span>, brindando oportunidades
 						para su crecimiento y desarrollo.</p>
-					<a href="/404" class="flex min-w-[300px] max-w-[20%] justify-center mx-auto transition-all bg-red-400 hover:saturate-220
+					<a href="/404" class="flex min-w-[300px] max-w-[20%] justify-center mx-auto transition-all bg-red-500 hover:saturate-220
 												hover:scale-105 px-4 py-2 rounded-full text-xl">
 							Descubre nuestros proyectos
 					</a>
@@ -43,34 +43,48 @@ import Consejo from '../components/consejo.astro';
 	</section>
 
 
-	<div class="flex md:flex-row flex-col w-[80%] mx-auto gap-4 px-4 py-2 text-gray-800 mb-6">
+	<div class="flex flex-wrap justify-center w-[80%] mx-auto gap-4 px-4 py-2 text-gray-800 mb-6 ">
 
-		<div class="min-w-[50%] view-animate-[--subjectReveal] animate-flip-in-x animate-range-[entry_10%_contain_25%]">
-			<div class="bg-amber-200  rounded-3xl p-4 mb-4">
-				<h2 class="text-3xl mb-4 font-semibold">Educación y Oportunidades</h2>
-				<p class="text-xl">"Apoyamos la formación de jóvenes en Yumbo a través de becas, mentorías y programas de
-					acompañamiento. Creemos en el poder de la educación para transformar vidas."
-				</p>
+		
+			<div class="bg-[#FDE293]  rounded-3xl overflow-hidden basis-md shadow-xl
+			view-animate-[--subjectReveal] animate-flip-in-x animate-range-[entry_10%_contain_25%] ">
+				<img src="/images/estudiantes2.webp" alt="" class="" >
+			
+				<h2 class="text-3xl mb-2 font-semibold px-4 pt-2">Educación y Oportunidades</h2>
+				<p class="text-xl p-4">"Acompañamos a los jóvenes de Yumbo en su proceso hacia la educación superior
+					mediante orientación, acompañamiento académico y alianzas institucionales.
+					Creemos en el poder de la educación para transformar vidas.
+					Cada paso que damos es un compromiso con su futuro y el desarrollo de nuestra comunidad."
+				</p>				
+				
 			</div>
 	
-			<div class="bg-emerald-300 rounded-3xl p-4 min-w-[50%] view-animate-[--subjectReveal] animate-flip-in-x animate-range-[entry_10%_contain_25%]">
-				<h2 class="text-3xl mb-4 font-semibold">Impacto en Números</h2>
-				<p class="text-xl">
-					"Más de 500 estudiantes beneficiados cada año. $2.876 millones gestionados en educación.
-					El 58% de los jóvenes en nuestros programas logran ingresar a la universidad."
+			<div class="bg-[#CEEAD6] rounded-3xl overflow-hidden basis-md shadow-xl
+			view-animate-[--subjectReveal] animate-flip-in-x animate-range-[entry_10%_contain_25%]">
+				<img src="/images/convenio2.webp" alt="" class="" >
+				<h2 class="text-3xl mb-2 font-semibold px-4 pt-2">Impacto en Números</h2>
+				<p class="text-xl p-4">
+					"A lo largo de los años, hemos gestionado múltiples contratos y convenios
+					con entidades como la Universidad del Valle, el Ministerio de Educación
+					Nacional y la Alcaldía de Yumbo, contribuyendo activamente a proyectos
+					educativos y de formación en la región."
 				</p>
 			</div>
 
-		</div>
+			<div class="bg-[#174EA6] rounded-3xl text-white overflow-hidden basis-md shadow-xl
+			view-animate-[--subjectReveal] animate-flip-in-x animate-range-[entry_10%_contain_25%]">
+				<img src="/images/convenio.webp" alt="" class="" >
+				<h1 class="text-3xl mb-2 font-semibold px-4 pt-2">Alianzas Estratégicas</h1>
+				<p class="text-xl p-4">"Nuestra labor es posible gracias a la cooperación con instituciones públicas y privadas que comparten nuestro
+					compromiso con la educación. Trabajamos de la mano con la Universidad del Valle, la Gobernación del Valle,
+					la Alcaldía de Yumbo, la Fundación Smurfit Kappa, la Cámara de Comercio de Cali, Comfandi, entre otras,
+					para fortalecer el acceso a oportunidades educativas y de desarrollo en nuestra comunidad."</p>
+			</div>
+
+		
 		
 
-		<div class="bg-cyan-300 rounded-3xl p-4 view-animate-[--subjectReveal] animate-flip-in-x animate-range-[entry_10%_contain_25%]">
-			<h1 class="text-3xl mb-4 font-semibold">Alianzas Estratégicas</h1>
-			<p class="text-xl">"Nuestra labor es posible gracias a la cooperación con instituciones públicas y privadas que comparten nuestro
-				compromiso con la educación. Trabajamos de la mano con la Universidad del Valle, la Gobernación del Valle,
-				la Alcaldía de Yumbo, la Fundación Smurfit Kappa, la Cámara de Comercio de Cali, Comfandi, entre otras,
-				para fortalecer el acceso a oportunidades educativas y de desarrollo en nuestra comunidad."</p>
-		</div>
+		
 	</div>
 
 </MainLayout>
