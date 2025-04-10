@@ -1,10 +1,16 @@
 ---
 
+import Component404 from "../components/Component404.astro";
 import Hero2 from "../components/hero2.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
-    <Hero2 srcImg = "../images/logo1.webp"/>
+    <Hero2 srcImg = "../images/fundacion5.webp"
+    titleHero1 = "Quiénes Somos: "
+    titleHero2 = "Compromiso con la Educación y la Comunidad"
+    textHero1  = "Conectamos esfuerzos institucionales y sociales para impulsar oportunidades educativas en Yumbo."
+    textHero2  = "Conoce nuestra historia, nuestros valores y el equipo que hace posible este proyecto."/>
+    <Component404 />
 </MainLayout>
 
