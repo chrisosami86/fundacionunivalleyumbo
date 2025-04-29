@@ -7,10 +7,10 @@ const {srcImg, titleHero1, titleHero2, textHero1, textHero2, alt} = Astro.props;
 <section id = hero2 class="md:flex-row flex flex-col md:justify-around md:content-center pt-32 w-full gap-4 h-full aspect-video text-white mb-40">
     <img src={srcImg} alt={alt} class="absolute w-full">
 
-    <div class="relative m-auto lg:top-0 top-12 text-center w-[55%]">
+    <div class="relative m-auto lg:top-0 top-12 text-center w-[80%] lg:w-[55%]">
 
-        <h1 class="lg:text-6xl text-3xl font-bold text-pretty mb-20 animate-fade-in-down animate-delay-300 animate-duration-slow drop-shadow-lg">{titleHero1}<span class="text-amber-300 font-bold">{titleHero2}</span></h1>
-        <p class=" hidden md:block lg:text-3xl font-semibold animate-fade-in-down animate-delay-500 animate-duration-slow">{textHero1}<br><br>{textHero2}</p>
+        <h1 class="lg:text-5xl text-3xl font-bold text-pretty mb-20 animate-fade-in-down animate-delay-300 animate-duration-slow drop-shadow-lg">{titleHero1}<span class="text-amber-300 font-bold">{titleHero2}</span></h1>
+        <p class=" hidden md:block text-2xl lg:text-3xl font-semibold animate-fade-in-down animate-delay-500 animate-duration-slow">{textHero1}<br><br>{textHero2}</p>
     </div>
 
     
