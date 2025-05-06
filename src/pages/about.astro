@@ -28,14 +28,56 @@ import MainLayout from "../layouts/MainLayout.astro";
     <ObjetivosComponent/>
     <ValoresComponent />
 
-    <section class="w-full bg-red-800 text-white text-xl p-4 flex flex-col">
-        <h1 class="font-bold text-3xl text-center p-4">Equipo de Trabajo</h1>
-        <div class="flex justify-around flex-wrap gap-6">
-            <PersonalComponent 
-            nombre="CONSTANZA PRADO" 
-            cargo="Auxiliar Contable"
-            imgPersona="/images/conny.webp"/>
-        </div>
+    <section class="w-full bg-red-800">
+        <section class="w-[80%] mx-auto  text-white text-xl p-4 flex flex-col">
+            <h1 class="font-bold text-4xl text-center p-4 my-6">Equipo de Trabajo</h1>
+            <div class="flex justify-around flex-wrap gap-6">
+                <PersonalComponent 
+                nombre="CONSTANZA PRADO" 
+                cargo="Profesional Administrativo"
+                imgPersona="/images/conny.webp"
+                profesion="Administradora de Empresas"
+                experiencia="Con mas de 15 años de experiencia"/>
+    
+                <PersonalComponent 
+                nombre="ALEXA CAMILA TOVAR" 
+                cargo="Profesional Administrativo"
+                imgPersona="/images/camila.webp"
+                profesion="Administradora de Empresas"
+                experiencia="Con mas de 10 años de experiencia"/>
+    
+                <PersonalComponent 
+                nombre="DANIELA MANZANO" 
+                cargo="Auxiliar Contable"
+                imgPersona="/images/daniela.webp"
+                profesion="Técnico en Contabilización de Operaciones Financieras"
+                experiencia="Con mas de 5 años de experiencia"/>
+    
+                <PersonalComponent 
+                nombre="YELITZA CORREA" 
+                cargo="Auxiliar Contable"
+                imgPersona="/images/yelitza.webp"
+                profesion="Técnico Laboral Contable"
+                experiencia="Con mas de 6 años de experiencia"/>
+    
+                <PersonalComponent 
+                nombre="ADRIANA ENRIQUEZ" 
+                cargo="Auxiliar Contable"
+                imgPersona="/images/adriana.webp"
+                profesion="Técnico en Auxiliar Contable "
+                experiencia="Con mas de 15 años de experiencia"/>
+    
+                <PersonalComponent 
+                nombre="MONICA CORAL" 
+                cargo="Apoyo Logístico"
+                imgPersona="/images/monica.webp"
+                profesion="Tecnóloga en Gestión Empresarial"
+                experiencia="Con mas de 7 años de experiencia"/>
+    
+            </div>    
+            
+        </section>
+
     </section>
 
    
