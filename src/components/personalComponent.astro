@@ -7,7 +7,7 @@ const {nombre, cargo, imgPersona, profesion, experiencia} = Astro.props;
     <div class="flex flex-col w-70 rounded-3xl group shadow-2xl">
         <div class="relative w-70 h-96 overflow-hidden object-left-bottom rounded-t-3xl">
             <div class="absolute z-2 w-full h-full bg-amber-900/80 text-center ml-70 group-hover:ml-0 transition-all duration-400">
-                <p class="mt-50 p-2 font-semibold text-2xl">{profesion}</p>
+                <p class="mt-30 p-4 font-semibold text-2xl">{profesion}</p>
                 <p class="text-xl">{experiencia}</p>
             </div>
             <img src={imgPersona} alt="" class="w-full h-full absolute object-cover z-1"/>
