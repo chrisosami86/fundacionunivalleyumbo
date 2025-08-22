@@ -1,5 +1,6 @@
 ---
 import Component404 from "../components/Component404.astro";
+import Cuatroparalaucomponent from "../components/cuatroparalaucomponent.astro";
 import Hero2 from "../components/hero2.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
@@ -10,5 +11,20 @@ import MainLayout from "../layouts/MainLayout.astro";
     textHero1  = "Impulsamos iniciativas que fortalecen el acceso a la educación, la orientación vocacional y el desarrollo integral de jóvenes en Yumbo."
     textHero2  = "Aquí conocerás los programas que llevamos a cabo junto a nuestras alianzas estratégicas."
     alt = "Grupo de niños de colegio haciendo el gesto con las manos del número 4, acompañados de una profesora que también hace el mismo gesto, todos participando en el proyecto 'Los de la 4 para la U'"/>
-    <Component404 />
+    
+    <section class="w-full py-5">
+        <Cuatroparalaucomponent />
+    </section>
+
+    <section class="bg-red-700 w-full py-10">
+        <Component404 />
+        
+    </section>
+    
+
 </MainLayout>
+
+
+<script>
+    import "@justinribeiro/lite-youtube";
+</script>
