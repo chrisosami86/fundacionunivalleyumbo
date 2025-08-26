@@ -1,4 +1,6 @@
 ---
+import Aftercomponent from "../components/aftercomponent.astro";
+import Caminoucomponent from "../components/caminoucomponent.astro";
 import Component404 from "../components/Component404.astro";
 import Cuatroparalaucomponent from "../components/cuatroparalaucomponent.astro";
 import Hero2 from "../components/hero2.astro";
@@ -16,9 +18,16 @@ import MainLayout from "../layouts/MainLayout.astro";
         <Cuatroparalaucomponent />
     </section>
 
-    <section class="bg-red-700 w-full py-10">
+    <section class="bg-red-700 w-full py-10 text-white">
+       <Caminoucomponent />        
+    </section>
+
+    <section class="w-full py-5">
+        <Aftercomponent />
+    </section>
+
+    <section class="w-full py-5">
         <Component404 />
-        
     </section>
     
 
